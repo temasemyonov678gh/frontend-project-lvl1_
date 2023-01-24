@@ -10,9 +10,9 @@ const prog = (firstNum, step) => {
   return arr;
 };
 export default (name) => {
-  console.log('Find the greatest common divisor of given numbers.');
+  console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
-    const numberfirst = Math.floor(Math.random() * (100 - 1) + 1);
+    const numberfirst = Math.floor(Math.random() * (50 - 1) + 1);
     const step = Math.floor(Math.random() * 10);
     const mathProgresion = prog(numberfirst, step);
     const randomIndex = Math.floor(Math.random() * 9);
