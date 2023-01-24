@@ -23,7 +23,8 @@ export default (name) => {
   for (let i = 0; i < 3; i += 1) {
     const number1 = Math.floor(Math.random() * (100 - 1) + 1);
     const number2 = Math.floor(Math.random() * (100 - 1) + 1);
-    const operator = operators[Math.floor(Math.random() * (4 - (-1)) + -1)];
+    const operator = operators[Math.floor(Math.random() * 4)];
+    console
     console.log(`Question: ${number1} ${operator} ${number2}`);
     const answer = readlineSync.question('Your answer: ');
     const answerTrue = calcs(number1, number2, operator);
